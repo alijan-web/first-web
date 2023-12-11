@@ -39,14 +39,6 @@ header {
     border-radius: 10px;
 }
 
-.search-bar button {
-    padding: 8px 15px;
-    background-color: #ff0000;
-    color: #ff0000;
-    border: none;
-    cursor: pointer;
-}
-
 .user-actions button {
     padding: 8px 15px;
     background-color: #fff;
@@ -54,6 +46,7 @@ header {
     border: none;
     cursor: pointer;
     margin-left: 10px;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 600px) {
