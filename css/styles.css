@@ -11,3 +11,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust the size of your logo */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50px;
+}
