@@ -22,3 +22,24 @@ header {
     margin-right: 10px;
     border-radius: 50px;
 }
+.site-name {
+    font-size: 1.5rem;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
