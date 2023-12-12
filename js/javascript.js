@@ -1,23 +1,16 @@
-// Add this script to enable the slider functionality
-
-document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.querySelector(".slider");
-    let currentIndex = 0;
-
-    function showSlide(index) {
-        const newPosition = -index * 100 + "%";
-        slider.style.transform = "translateX(" + newPosition + ")";
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % document.querySelectorAll(".slide").length;
-        showSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + document.querySelectorAll(".slide").length) % document.querySelectorAll(".slide").length;
-        showSlide(currentIndex);
-    }
-
-    setInterval(nextSlide, 5000); // Change slide every 5 seconds (adjust as needed)
+// Add this script to your HTML file or in an external JavaScript file
+$(document).ready(function(){
+    $('.banner-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000, // Set the duration for each slide
+        dots: true, // Add navigation dots
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false // Hide arrows on small screens
+                }
+            }
+        ]
+    });
 });
